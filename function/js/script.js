@@ -1,45 +1,47 @@
 function determineDayOfTheWeek() {
-    dayNumber = document.getElementById('input-field').value;
+    const dayNumber = document.getElementById('input-field').value;
+
+    const result = document.getElementById('result');
 
     switch (dayNumber) {
         case '1':
-            alert("Monday");
+            result.innerHTML = "Monday";
             break
     
         case '2':
-            alert("Tuesday");
+            result.innerHTML = "Tuestay";
             break
     
         case '3':
-            alert("Wednesday");
+            result.innerHTML = "Wednestay";
             break
     
         case '4':
-            alert("Thursday");
+            result.innerHTML = "Thursday";
             break
     
         case '5':
-            alert("Friday");
+            result.innerHTML = "Friday";
             break
     
         case '6':
-            alert("Saturday");
+            result.innerHTML = "Saturday";
             break
     
         case '7':
-            alert("Sunday");
+            result.innerHTML = "Sunday";
             break
     
         case '':
-            alert("Day is not changed!!!");
+            result.innerHTML = "Day is not changed!!!";
             break
             
         case null:
-            alert("Day is not changed!!!");
+            result.innerHTML = "Day is not changed!!!";
             break  
     
         default:
-            alert("This is not day of week!!!");
+            result.innerHTML = "This is not day of week!!!";
             break;
     }
 }
