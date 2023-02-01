@@ -1,0 +1,13 @@
+<table class="center">
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Is student</th>
+    </tr>
+
+    <tr *ngFor="let person of data">
+        <td>{{person.firstName}}</td>
+        <td>{{person.lastName}}</td>
+        <td>{{person.isStudent}}</td>
+    </tr>
+</table>    
