@@ -44,7 +44,7 @@ const arrayOfObjects = [
 
 console.log("Students with GPA above 5.");
 arrayOfObjects.forEach((student) => {
-    if (student.averageScore > 5) {
+    if (student.averageScore >= 5) {
         console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
     }
 });
