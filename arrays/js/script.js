@@ -16,7 +16,6 @@ arr.forEach(value => console.log(value));
 console.log("While:");
 let i = 0;
 while (i < arr.length) {
-    i++;
-
     console.log(arr[i]);
+    i++;
 }
