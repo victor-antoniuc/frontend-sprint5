@@ -44,18 +44,14 @@ const arrayOfObjects = [
 
 console.log("Students with GPA above 5.");
 arrayOfObjects.forEach((student) => {
-    for (const [key, value] of Object.entries(student)) {
-        if (student.averageScore > 5) {
-            console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
-        }
+    if (student.averageScore > 5) {
+        console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
     }
 });
 
 console.log("Students with GPA below 5.");
 arrayOfObjects.forEach((student) => {
-    for (const [key, value] of Object.entries(student)) {
-        if (student.averageScore < 5) {
-            console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
-        }
+    if (student.averageScore < 5) {
+        console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
     }
 });
