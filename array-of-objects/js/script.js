@@ -1,4 +1,4 @@
-const arrayOfObjects = [
+const arrayOfStudents = [
     {
         'firstName' : 'Ivan',
         'lastName' : 'Ceban',
@@ -42,16 +42,24 @@ const arrayOfObjects = [
     }
 ];
 
-console.log("Students with GPA above 5.");
-arrayOfObjects.forEach((student) => {
+const studentsWithGPAAboveFive = [];
+const studentsWithGPABelowFive = [];
+
+
+arrayOfStudents.forEach((student) => {
     if (student.averageScore >= 5) {
-        console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
+        studentsWithGPAAboveFive.push(student);
+    }
+
+    if (student.averageScore < 5) {
+        studentsWithGPABelowFive.push(student)
     }
 });
 
-console.log("Students with GPA below 5.");
-arrayOfObjects.forEach((student) => {
-    if (student.averageScore < 5) {
-        console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
-    }
+studentsWithGPAAboveFive.forEach((student) => {
+    console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
+});
+
+studentsWithGPABelowFive.forEach((student) => {
+    console.log(`${student.firstName} ${student.lastName} ${student.averageScore}`);
 });
