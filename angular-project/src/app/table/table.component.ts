@@ -25,6 +25,12 @@ export class TableComponent {
       'firstName' : 'Vasilii',
       'lastName' : 'Ceban',
       'isStudent' : true
-    }
+    },
+
+    {
+      'firstName' : 'Vitalii',
+      'lastName' : 'Naumov',
+      'isStudent' : false
+    },
   ];
 }
